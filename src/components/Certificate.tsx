@@ -55,7 +55,6 @@
 "use client";
 import React from "react";
 import { Heading } from "./Heading";
-import Link from "next/link";
 import Image from "next/image";
 import { Paragraph } from "./Paragraph";
 import { motion } from "framer-motion";
