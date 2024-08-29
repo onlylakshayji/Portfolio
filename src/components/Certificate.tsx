@@ -51,7 +51,6 @@
 //   );
 // };
 
-
 "use client";
 import React from "react";
 import { Heading } from "./Heading";
@@ -59,12 +58,13 @@ import Image from "next/image";
 import { Paragraph } from "./Paragraph";
 import { motion } from "framer-motion";
 import { certificates } from "@/constants/certificates";
+import { Certi } from "@/types/certificates"; // Adjust the path as necessary
 
 export const Certificate = () => {
   return (
     <div>
       <div className="grid grid-cols-1 gap-10">
-        {certificates.map((certificate, idx) => (
+        {certificates.map((certificate: Certi, idx: number) => (
           <motion.div key={certificate.title}>
             <div className="group flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 hover:bg-gray-50 rounded-2xl transition duration-200 pt-4">
               <Image
