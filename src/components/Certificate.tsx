@@ -65,7 +65,7 @@ export const Certificate = () => {
     <div>
       <div className="grid grid-cols-1 gap-10">
         {certificates.map((certificate, idx) => (
-          <motion.div>
+          <motion.div key={certificate.title}>
             <div className="group flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 hover:bg-gray-50 rounded-2xl transition duration-200 pt-4">
               <Image
                 src={certificate.thumbnail}
@@ -87,7 +87,7 @@ export const Certificate = () => {
                   </Paragraph>
                 </div>
                 <div className="flex space-x-1 md:mb-1 mt-2 md:mt-0">
-                  {certificate.technologies?.map((tech) => (
+                  {certificate.technologies?.map((tech: string) => (
                     <span
                       key={tech}
                       className="text-xs md:text-xs lg:text-xs bg-gray-50 px-2 py-1 rounded-sm text-secondary"
