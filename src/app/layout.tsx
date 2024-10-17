@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import { Sidebar } from "@/components/Sidebar";
 import "./globals.css";
 import type { Metadata } from "next";
@@ -36,6 +37,8 @@ export default function RootLayout({
             <Footer />
           </div>
         </div>
+        {/* Add the Analytics component here */}
+        <Analytics />
       </body>
     </html>
   );
