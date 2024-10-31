@@ -94,7 +94,7 @@ export const products = [
     title: "Todo App",
     description:
       "Todo App with basic CRUD operations",
-    thumbnail: "/images/todo1.png",
+    thumbnail: "/images/Todo1.png",
     images: ["/images/Todo2.png", "/images/Todo1.png"],
     stack: ["Reactjs","Tailwind Css"],
     slug: "Todo-App",
