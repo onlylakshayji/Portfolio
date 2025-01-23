@@ -1,5 +1,15 @@
 export const timeline = [
   {
+    company: "Algofast",
+    title: "Intern",
+    date: "January 15,2025 - Present",
+    description: "working currently on features",
+    responsibilities: [
+      "Nextjs",
+      "MariaDB"
+    ],
+  },
+  {
     company: "Blend Vidya Edtech",
     title: "Intern",
     date: "May 2024 - August 2024",
