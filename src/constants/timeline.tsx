@@ -24,7 +24,7 @@ export const timeline = [
   {
     company: "100xdevs",
     title: "Student",
-    date: "February 2023 - Present",
+    date: "February 2024 - Present",
     description: "Started web dev seriously",
     responsibilities: [
       "Learnt javascript",
