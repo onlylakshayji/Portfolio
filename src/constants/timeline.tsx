@@ -3,7 +3,7 @@ export const timeline = [
     company: "Algofast",
     title: "Intern",
     date: "January 15,2025 - Present",
-    description: "working currently on features",
+    description: "Working currently on features , improvements and bug fixes",
     responsibilities: [
       "Nextjs",
       "MariaDB"
