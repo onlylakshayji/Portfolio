@@ -65,13 +65,13 @@ export default function Education() {
         <Paragraph className=" mt-4">
         <div className="flex ">
             <h2>{" "}<Highlight>Semester I</Highlight> -- </h2>
-            SGPA : 9.4
+            SGPA : 9.400
           </div>
         </Paragraph>
         <Paragraph className=" mt-4">
           <div className="flex ">
             <h2>{" "}<Highlight>Semester II</Highlight> -- </h2>
-            SGPA : 8.8
+            SGPA : 8.800
           </div>
         </Paragraph>
         <Paragraph className=" mt-4">
@@ -101,14 +101,14 @@ export default function Education() {
         <Paragraph className=" mt-4">
         <div className="flex ">
             <h2>{" "}<Highlight>Semester VI</Highlight> -- </h2>
-            SGPA : xx
+            SGPA : 8.500
           </div>
         </Paragraph>
 
         <Paragraph className=" mt-4">
           <div className="flex ">
             <h2>{" "}<Highlight>Semester VII</Highlight> -- </h2>
-            SGPA : xx
+            SGPA : 8.808
           </div>
         </Paragraph>
 

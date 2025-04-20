@@ -19,7 +19,7 @@ export default function Home() {
       {/* Download Resume Button */}
       <div className="mt-8">
         <a
-          href="/docs/resume.pdf"  // Replace with your actual path
+          href="/docs/resume.pdf" 
           download="Resume.pdf"
           className="inline-block bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-600 transition"
         >
