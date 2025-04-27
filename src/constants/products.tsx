@@ -1,5 +1,35 @@
 export const products = [
   {
+    href: "https://google-docs-xi-lovat.vercel.app/",
+    title: "Ms Word App",
+    description:
+      "Ms word",
+    thumbnail: "/images/ms0.png",
+    images: ["/images/ms01.png", "/images/ms1.png","/images/ms2.png"],
+    stack: ["NEXTjs","Tailwind Css","Convex","Typescript","Liveblocks"],
+    slug: "MswordApp",
+    content: (
+      <div>
+        <p>
+          This project is a web-based MS Word clone built with Next.js, Tailwind CSS, Convex, Typescript, and Liveblocks.
+          It provides users with a seamless document editing experience directly from their browser.
+          Users can sign up, log in, and securely manage their documents through an intuitive interface.
+        </p>
+        <p>
+          One of the key features of this app is real-time collaborative editing. 
+          Multiple users can work together on the same document simultaneously, with live updates powered by Liveblocks.
+          The app handles user authentication, document creation, editing, saving, and multi-user collaboration smoothly, 
+          offering an experience similar to popular cloud-based word processors.
+        </p>
+        <p>
+          Under the hood, Convex is used for backend services like authentication, database management, and real-time syncing, 
+          ensuring that changes are instantly reflected across all active sessions. 
+          This project showcases how modern web technologies can be combined to build a powerful, interactive, and collaborative application.
+        </p>
+      </div>
+    ),
+  },
+  {
     href: "https://food-delivery-app-gamma-three.vercel.app/",
     title: "Food Delivery App",
     description:
