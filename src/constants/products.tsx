@@ -4,8 +4,8 @@ export const products = [
     title: "Ms Word App",
     description:
       "Ms word",
-    thumbnail: "/images/ms0.png",
-    images: ["/images/ms01.png", "/images/ms1.png","/images/ms2.png"],
+    thumbnail: "/images/w01.png",
+    images: ["/images/w1.png", "/images/w2.png","/images/w3.png","/images/w4.png","/images/w5.png"],
     stack: ["NEXTjs","Tailwind Css","Convex","Typescript","Liveblocks"],
     slug: "MswordApp",
     content: (
