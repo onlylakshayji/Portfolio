@@ -18,11 +18,11 @@ export const navlinks = [
     label: "About",
     icon: IconMessage2,
   },
-  {
-    href: "/education",
-    label: "Education",
-    icon: IconBackpack,
-  },
+  // {
+  //   href: "/education",
+  //   label: "Education",
+  //   icon: IconBackpack,
+  // },
   {
     href: "/projects",
     label: "Projects",

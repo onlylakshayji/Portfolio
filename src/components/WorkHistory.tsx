@@ -43,7 +43,9 @@ export const WorkHistory = () => {
 const Step = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex space-x-1 items-start my-2">
-      <IconCircleCheckFilled className="h-3 w-4 mt-1 text-neutral-300" />
+      {/* <IconCircleCheckFilled fill="green" stroke={0} 
+        className="h-3 w-4 mt-1 text-neutral-300" /> */}
+        <IconCircleCheckFilled className="h-4 w-4 text-emerald-500" />
       <Paragraph className="text-sm md:text-sm lg:text-sm">
         {children}
       </Paragraph>

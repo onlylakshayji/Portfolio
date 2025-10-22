@@ -116,7 +116,7 @@ export default function Education() {
         <Paragraph className=" mt-4">
           <div className="flex ">
             <h2>{" "}<Highlight>Semester VIII</Highlight> -- </h2>
-            SGPA : xx
+            SGPA : 9.200
           </div>
         </Paragraph>
       </div>

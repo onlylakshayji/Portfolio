@@ -7,7 +7,7 @@ import {
 
 export const socials = [
   {
-    href: "https://x.com/LBansal_123",
+    href: "https://x.com/onlylakshayji",
     label: "Twitter",
     icon: IconBrandTwitter,
   },
@@ -22,7 +22,7 @@ export const socials = [
     icon: IconBrandLeetcode,
   },
   {
-    href: "https://github.com/LakshayxBansal",
+    href: "https://github.com/onlylakshayji",
     label: "Github",
     icon: IconBrandGithub,
   }
