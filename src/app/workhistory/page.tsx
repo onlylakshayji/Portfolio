@@ -6,15 +6,17 @@ import { WorkHistory } from "@/components/WorkHistory";
 
 export default function Home2() {
   return (
-    <Container>
-      <span className="text-4xl">💼</span>
-      <Heading className="font-black">Work History</Heading>
-      <Paragraph className="max-w-xl mt-4">
-        I&apos;m a full-stack developer that loves{" "}
-        <Highlight>building products</Highlight> and web apps that can impact
-        millions of lives
-      </Paragraph>
-      <WorkHistory />
-    </Container>
+    <main className="overflow-x-hidden">
+      <Container>
+        <span className="text-4xl">💼</span>
+        <Heading className="font-black">Work History</Heading>
+        <Paragraph className="max-w-xl mt-4">
+          I&apos;m a full-stack developer that loves{" "}
+          <Highlight>building products</Highlight> and web apps that can impact
+          millions of lives
+        </Paragraph>
+        <WorkHistory />
+      </Container>
+    </main>
   );
 }

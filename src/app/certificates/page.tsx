@@ -11,13 +11,15 @@ export const metadata: Metadata = {
 
 export default function Certificates() {
   return (
-    <Container>
-      <span className="text-4xl">⚡</span>
-      <Heading className="font-black mb-10">
-        {" "}
-        Achievements during my journey
-      </Heading>
-      <Certificate/>
-    </Container>
+    <main className="overflow-x-hidden">
+      <Container>
+        <span className="text-4xl">⚡</span>
+        <Heading className="font-black mb-10">
+          {" "}
+          Achievements during my journey
+        </Heading>
+        <Certificate/>
+      </Container>
+    </main>
   );
 }

@@ -15,19 +15,21 @@ export const metadata: Metadata = {
 
 export default function Projects() {
   return (
-    <Container>
-      <span className="text-4xl">✉️</span>
-      <Heading className="font-black mb-2">Contact Me</Heading>
-      <Paragraph className="mb-10 max-w-xl">
-        This isn&apos;t connected to backend, so it won&apos;t work.
-      </Paragraph>
+    <main className="overflow-x-hidden">
+      <Container>
+        <span className="text-4xl">✉️</span>
+        <Heading className="font-black mb-2">Contact Me</Heading>
+        <Paragraph className="mb-10 max-w-xl">
+          This isn&apos;t connected to backend, so it won&apos;t work.
+        </Paragraph>
 
-      <Paragraph className="mt-3 mb-6"> {" "}
-        <Highlight>
-            But you can mail me at lakshay012003@gmail.com for collaboration or just to say hi! 
-          </Highlight>
-      </Paragraph>
-      <Contact/>
-    </Container>
+        <Paragraph className="mt-3 mb-6"> {" "}
+          <Highlight>
+              But you can mail me at lakshay012003@gmail.com for collaboration or just to say hi! 
+            </Highlight>
+        </Paragraph>
+        <Contact/>
+      </Container>
+    </main>
   );
 }

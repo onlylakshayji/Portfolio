@@ -7,7 +7,8 @@ import { TechStack } from "@/components/TechStack";
 
 export default function Home() {
   return (
-    <Container>
+    <main className="overflow-x-hidden">
+      <Container>
       <span className="text-4xl">👋</span>
       <Heading className="font-black">Hello there! I&apos;m Lakshay Bansal</Heading>
       <Paragraph className="max-w-xl mt-4">
@@ -44,5 +45,6 @@ export default function Home() {
       <Products/>
       <TechStack />
     </Container>
+    </main>
   );
 }

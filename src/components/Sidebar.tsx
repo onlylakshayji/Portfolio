@@ -37,11 +37,20 @@ export const Sidebar = () => {
           </motion.div>
         )}
       </AnimatePresence>
-      <button
-        className="fixed lg:hidden bottom-4 right-4 h-8 w-8 border border-neutral-200 rounded-full backdrop-blur-sm flex items-center justify-center z-50"
+      {/* <button
+        className="fixed lg:hidden bg-black bottom-4 right-4 h-8 w-8 border border-neutral-200 rounded-full backdrop-blur-sm flex items-center justify-center z-50"
         onClick={() => setOpen(!open)}
       >
         <IconLayoutSidebarRightCollapse className="h-4 w-4 text-secondary" />
+      </button> */}
+      <button
+        className="fixed lg:hidden bottom-5 right-5 h-12 w-12 rounded-full
+             bg-white/80 backdrop-blur-md border border-neutral-300
+             shadow-md hover:shadow-lg transition-all duration-200
+             flex items-center justify-center z-50 active:scale-95"
+        onClick={() => setOpen(!open)}
+      >
+        <IconLayoutSidebarRightCollapse className="h-5 w-5 text-black" />
       </button>
     </>
   );

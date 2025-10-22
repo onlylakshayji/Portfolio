@@ -11,9 +11,11 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <Container>
-      <Heading className="font-black ml-4 mb-2">About Me 👨‍🔧</Heading>
-      <About />
-    </Container>
+    <main className="overflow-x-hidden">
+      <Container>
+        <Heading className="font-black ml-4 mb-2">About Me 👨‍🔧</Heading>
+        <About />
+      </Container>
+    </main>
   );
 }

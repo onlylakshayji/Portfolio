@@ -42,8 +42,10 @@ export default function SingleProjectPage({
     redirect("/projects");
   }
   return (
-    <Container>
-      <SingleProduct product={product} />
-    </Container>
+    <main className="overflow-x-hidden">
+      <Container>
+        <SingleProduct product={product} />
+      </Container>
+    </main>
   );
 }

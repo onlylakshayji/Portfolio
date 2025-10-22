@@ -15,9 +15,11 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <Container>
-      <Heading className="font-black mt-5"> Education 📚</Heading>
-      <Education/>
-    </Container>
+    <main className="overflow-x-hidden">
+      <Container>
+        <Heading className="font-black mt-5"> Education 📚</Heading>
+        <Education/>
+      </Container>
+    </main>
   );
 }
