@@ -10,13 +10,13 @@ export const Footer = () => {
   
     {/* Social Links */}
     <div className="flex gap-4">
-      <a href="https://github.com/LakshayxBansal" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/onlylakshayji" target="_blank" rel="noopener noreferrer">
         <FaGithub className="h-6 w-6 hover:text-black transition" />
       </a>
       <a href="https://instagram.com/onlylakshayji" target="_blank" rel="noopener noreferrer">
         <FaInstagram className="h-6 w-6 hover:text-pink-500 transition" />
       </a>
-      <a href="https://x.com/LBansal_123" target="_blank" rel="noopener noreferrer">
+      <a href="https://x.com/onlylakshayji" target="_blank" rel="noopener noreferrer">
         <FaTwitter className="h-6 w-6 hover:text-blue-500 transition" />
       </a>
       <a href="https://www.linkedin.com/in/lakshay-bansal-2b5926250/" target="_blank" rel="noopener noreferrer">
@@ -27,7 +27,7 @@ export const Footer = () => {
     {/* Personal Website */}
     <div>
       <a 
-        href="https://lakshayxbansal.com" 
+        href="https://onlylakshayji.de" 
         target="_blank" 
         rel="noopener noreferrer" 
         className="underline hover:text-blue-600 transition"
