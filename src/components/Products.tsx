@@ -1,20 +1,23 @@
 "use client";
 import React from "react";
 import { Heading } from "./Heading";
-import { Product } from "@/types/products";
-import { products } from "@/constants/products";
+import { Project } from "@/types/projects";
+import { projectsTranslation } from "@/constants/projects-translation";
 import Link from "next/link";
 import Image from "next/image";
 import { Paragraph } from "./Paragraph";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/context/LanguageContext";
 
 export const Products = () => {
+  const { language } = useLanguage();
+  const projects: Project[] = projectsTranslation[language];
   return (
     <div>
       <div className="grid grid-cols-1  gap-10">
-        {products.map((product: Product, idx: number) => (
+        {projects.map((project: Project, idx: number) => (
           <motion.div
-            key={product.href}
+            key={project.href}
             initial={{
               opacity: 0,
               x: -50,
@@ -26,12 +29,12 @@ export const Products = () => {
             transition={{ duration: 0.2, delay: idx * 0.1 }}
           >
             <Link
-              href={product.slug ? `/projects/${product.slug}` : product.href}
-              key={product.href}
+              href={project.slug ? `/projects/${project.slug}` : project.href}
+              key={project.href}
               className="group flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 hover:bg-gray-50 rounded-2xl transition duration-200 pt-4"
             >
               <Image
-                src={product.thumbnail}
+                src={project.thumbnail}
                 alt="thumbnail"
                 height="200"
                 width="200"
@@ -43,14 +46,14 @@ export const Products = () => {
                     as="h4"
                     className="font-black text-lg md:text-lg lg:text-lg "
                   >
-                    {product.title}
+                    {project.title}
                   </Heading>
                   <Paragraph className="text-sm md:text-sm lg:text-sm mt-2 max-w-xl">
-                    {product.description}
+                    {project.description}
                   </Paragraph>
                 </div>
                 <div className="flex space-x-1 md:mb-1 mt-2 md:mt-0">
-                  {product.stack?.map((stack: string) => (
+                  {project.stack?.map((stack: string) => (
                     <span
                       key={stack}
                       className="text-xs  md:text-xs lg:text-xs bg-gray-50 px-2 py-1 rounded-sm text-secondary"
@@ -60,7 +63,7 @@ export const Products = () => {
                   ))}
                 </div>
                 <div className="flex space-x-1 md:mb-1 md:mt-0">
-                {product.stack2?.map((stack2: string) => (
+                {project.stack2?.map((stack2: string) => (
                     <span
                       key={stack2}
                       className="text-xs  md:text-xs lg:text-xs bg-gray-50 px-2 py-1 rounded-sm text-secondary"

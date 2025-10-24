@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 
 import localFont from "next/font/local";
@@ -18,6 +19,7 @@ export const Heading = ({
   children: React.ReactNode;
   as?: keyof JSX.IntrinsicElements;
 }) => {
+
   return (
     <Tag
       className={twMerge(
