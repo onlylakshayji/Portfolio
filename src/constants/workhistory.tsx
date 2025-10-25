@@ -61,7 +61,7 @@ export const workhistory = {
     {
       company: "Algofast India Pvt. Ltd.",
       title: "Praktikant als Softwareentwickler",
-      date: "15. Januar 2025 – 15. Mai 2025",
+      date: "15. Januar 2024 – 15. Mai 2025",
       description: "Derzeit tätig an Funktionen, Verbesserungen und Fehlerbehebungen",
       responsibilities: [
         "Next.js",
