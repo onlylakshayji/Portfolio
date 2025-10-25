@@ -3,7 +3,7 @@ export const workhistory = {
     {
       company: "Algofast India Pvt. Ltd.",
       title: "Software Developer Intern",
-      date: "January 15, 2025 - May 15, 2025",
+      date: "January 15, 2024 - May 15, 2025",
       description: "Working currently on features, improvements, and bug fixes",
       responsibilities: [
         "Next.js",
