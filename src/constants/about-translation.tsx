@@ -68,7 +68,6 @@ export const aboutTranslation = {
       </>
     )
   },
-
   de: {
     hello: "Über mich",
     intro: [

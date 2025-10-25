@@ -12,8 +12,13 @@ export interface Project {
   content: ReactNode;
 }
 
-export const projectsTranslation: Record<"en" | "de", Project[]> = {
-  en: [
+export const projectsTranslation: Record<
+  "en" | "de",
+  { hello: string; projects: Project[] }
+> = {
+  en: {
+    hello: "What I have been working on",
+    projects:[
     {
       href: "https://google-docs-xi-lovat.vercel.app/",
       title: "Ms Word App",
@@ -93,8 +98,10 @@ export const projectsTranslation: Record<"en" | "de", Project[]> = {
     //   ),
     // },
   ],
-
-  de: [
+},
+  de: {
+    hello: "Woran ich gearbeitet habe",
+    projects: [
     {
       href: "https://google-docs-xi-lovat.vercel.app/",
       title: "Ms Word App",
@@ -174,4 +181,88 @@ export const projectsTranslation: Record<"en" | "de", Project[]> = {
     //   ),
     // },
   ]
+}
 };
+
+
+
+// export const projectsTranslation: Record<
+//   "en" | "de",
+//   { hello: string; projects: Project[] }
+// > = {
+//   en: {
+//     hello: "What I have been working on",
+//     projects:[
+//       {
+//         href: "https://google-docs-xi-lovat.vercel.app/",
+//         title: "Ms Word App",
+//         description: "Ms Word",
+//         thumbnail: "/images/w01.png",
+//         images: [
+//           "/images/w2.png",
+//           "/images/w3.png",
+//           "/images/w4.png",
+//           "/images/w5.png",
+//         ],
+//         stack: ["NEXTjs", "Tailwind Css", "Convex", "Typescript", "Liveblocks"],
+//         slug: "MswordApp",
+//         content: (
+//           <div>
+//             <p>
+//               This project is a web-based MS Word clone built with Next.js,
+//               Tailwind CSS, Convex, Typescript, and Liveblocks. Users can edit
+//               documents directly in their browser.
+//             </p>
+//             <p>
+//               Key feature: real-time collaborative editing. Multiple users can
+//               work on the same document simultaneously, powered by Liveblocks.
+//             </p>
+//             <p>
+//               Convex handles backend services like authentication, database
+//               management, and real-time syncing to ensure smooth collaboration.
+//             </p>
+//           </div>
+//         ),
+//       },
+//     ],
+//   },
+
+//   de: {
+//     hello: "Woran ich gearbeitet habe",
+//     projects: [
+//       {
+//         href: "https://google-docs-xi-lovat.vercel.app/",
+//         title: "Ms Word App",
+//         description: "Ms Word",
+//         thumbnail: "/images/w01.png",
+//         images: [
+//           "/images/w2.png",
+//           "/images/w3.png",
+//           "/images/w4.png",
+//           "/images/w5.png",
+//         ],
+//         stack: ["NEXTjs", "Tailwind Css", "Convex", "Typescript", "Liveblocks"],
+//         slug: "MswordApp",
+//         content: (
+//           <div>
+//             <p>
+//               Dieses Projekt ist ein webbasiertes MS Word-Klon, entwickelt mit
+//               Next.js, Tailwind CSS, Convex, Typescript und Liveblocks.
+//               Benutzer können Dokumente direkt im Browser bearbeiten.
+//             </p>
+//             <p>
+//               Hauptmerkmal: Echtzeit-Zusammenarbeit. Mehrere Benutzer können
+//               gleichzeitig am selben Dokument arbeiten, unterstützt von
+//               Liveblocks.
+//             </p>
+//             <p>
+//               Convex übernimmt Backend-Dienste wie Authentifizierung,
+//               Datenbankverwaltung und Echtzeit-Synchronisation, um eine
+//               reibungslose Zusammenarbeit zu gewährleisten.
+//             </p>
+//           </div>
+//         ),
+//       },
+//     ],
+//   },
+// };

@@ -90,7 +90,7 @@ type Props = {
 // ✅ Generate metadata based on selected language
 export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
   const lang = searchParams?.lang || "en";
-  const product = projectsTranslation[lang].find(p => p.slug === params.slug);
+  const product = projectsTranslation[lang].projects.find(p => p.slug === params.slug);
 
   return {
     title: product?.title ?? "Projects | Lakshay Bansal",
@@ -100,8 +100,8 @@ export async function generateMetadata({ params, searchParams }: Props): Promise
 
 // ✅ Single project page
 export default function SingleProjectPage({ params, searchParams }: Props) {
-  const language: "en" | "de" = searchParams?.lang || "en";
-  const projects: Project[] = projectsTranslation[language];
+  const language: "en" | "de" = searchParams?.lang || "de";
+  const projects: Project[] = projectsTranslation[language].projects;
   const slug = params.slug;
 
   const project = projects.find(p => p.slug === slug);
@@ -114,7 +114,7 @@ export default function SingleProjectPage({ params, searchParams }: Props) {
   return (
     <main className="overflow-x-hidden">
       <Container>
-        <SingleProduct project={project} />
+        <SingleProduct project={project}/>
       </Container>
     </main>
   );

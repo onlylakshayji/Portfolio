@@ -6,7 +6,7 @@ import { Heading } from "./Heading";
 import { Paragraph } from "./Paragraph";
 import { motion } from "framer-motion";
 
-export const SingleProduct = ({ project }: { project: Project }) => {
+export const SingleProduct = ({ project }: { project: Project}) => {
   const [activeImage, setActiveImage] = useState<StaticImageData | string>(
     project.thumbnail
   );

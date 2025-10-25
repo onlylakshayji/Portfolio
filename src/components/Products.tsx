@@ -9,9 +9,11 @@ import { Paragraph } from "./Paragraph";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
 
+//@ts-ignore
 export const Products = () => {
   const { language } = useLanguage();
-  const projects: Project[] = projectsTranslation[language];
+  const { hello, projects } = projectsTranslation[language];
+  
   return (
     <div>
       <div className="grid grid-cols-1  gap-10">
