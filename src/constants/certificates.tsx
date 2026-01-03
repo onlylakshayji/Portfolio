@@ -1,7 +1,7 @@
 export const certificates = {
   en: [
     {
-      title: "Software Developer Internship at AlgoFast",
+      title: "Software Developer Internship at Algofast India Pvt. Ltd",
       description: "From 15th January, 2025 to 15th May, 2025",
       thumbnail: "/images/algofast-completion.png",
     },
@@ -38,7 +38,7 @@ export const certificates = {
   ],
   de: [
     {
-      title: "Softwareentwickler-Praktikum bei AlgoFast",
+      title: "Softwareentwickler-Praktikum bei Algofast India Pvt. Ltd",
       description: "Vom 15. Januar 2025 bis 15. Mai 2025",
       thumbnail: "/images/algofast-completion.png",
     },
