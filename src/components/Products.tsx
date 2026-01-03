@@ -8,6 +8,8 @@ import Image from "next/image";
 import { Paragraph } from "./Paragraph";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
+import { ArrowRight } from "lucide-react";
+
 
 //@ts-ignore
 export const Products = () => {
@@ -33,20 +35,23 @@ export const Products = () => {
             <Link
               href={project.slug ? `/projects/${project.slug}` : project.href}
               key={project.href}
-              className="group flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 hover:bg-gray-50 rounded-2xl transition duration-200 pt-4"
+              // className="group flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 hover:bg-gray-50 rounded-2xl transition duration-200 pt-4"
+              className="group flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 rounded-2xl border border-transparent p-4 cursor-pointer transition-all duration-200 hover:bg-gray-50 hover:border-gray-200 hover:-translate-y-1 hover:shadow-md"
             >
               <Image
                 src={project.thumbnail}
                 alt="thumbnail"
                 height="200"
                 width="200"
-                className="rounded-md"
+                // className="rounded-md"
+                className="rounded-md transition-transform duration-200 group-hover:scale-[1.03] group-hover:brightness-95"
               />
               <div className="flex flex-col justify-between">
                 <div>
                   <Heading
                     as="h4"
-                    className="font-black text-lg md:text-lg lg:text-lg "
+                    // className="font-black text-lg md:text-lg lg:text-lg"
+                    className="font-black text-lg group-hover:underline underline-offset-4"
                   >
                     {project.title}
                   </Heading>
@@ -54,6 +59,7 @@ export const Products = () => {
                     {project.description}
                   </Paragraph>
                 </div>
+                
                 <div className="flex space-x-1 md:mb-1 mt-2 md:mt-0">
                   {project.stack?.map((stack: string) => (
                     <span
@@ -63,6 +69,13 @@ export const Products = () => {
                       {stack}
                     </span> 
                   ))}
+                </div>
+
+                <div className="flex items-center gap-1 text-sm text-muted-foreground mt-2">
+                  <span className="opacity-0 font-normal translate-x-[-4px] transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0">
+                    View project
+                  </span>
+                  <ArrowRight className="h-4 w-4 opacity-0 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-1" />
                 </div>
                 <div className="flex space-x-1 md:mb-1 md:mt-0">
                 {project.stack2?.map((stack2: string) => (

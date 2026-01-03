@@ -42,7 +42,7 @@ export const aboutTranslation = {
     ],
     softHeading: `Soft Skills & Languages`,
     softSkills: [
-      "English (C1)", "German (A2)", "Problem Solving",
+      "English (C1)", "German (B1)", "Problem Solving",
       "Team Collaboration", "Communication", "Creativity & Critical Thinking"
     ],
     focus: (
@@ -108,7 +108,7 @@ export const aboutTranslation = {
     ],
     softHeading: `Soft Skills & Sprachen`,
     softSkills: [
-      "Englisch (C1)", "Deutsch (A2)", "Problemlösung",
+      "Englisch (C1)", "Deutsch (B1)", "Problemlösung",
       "Teamarbeit", "Kommunikation", "Kreativität & kritisches Denken"
     ],
     focus: (
