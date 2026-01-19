@@ -34,6 +34,8 @@
 // );
 // }
 
+//---------------------------------------------------
+
 "use client";
 
 import { Container } from "@/components/Container";
@@ -55,7 +57,6 @@ export default function Home() {
 
       <Container>
         <div className="relative grid grid-cols-1 md:grid-cols-2 gap-16 items-center min-h-[80vh]">
-
           {/* LEFT CONTENT */}
           <div>
             {/* Greeting */}
@@ -80,49 +81,27 @@ export default function Home() {
 
             {/* CTAs */}
             {/* CTAs */}
-<div className="flex flex-wrap items-center gap-4 mt-10">
+            <div className="flex flex-wrap items-center gap-4 mt-10">
 
-  {/* PRIMARY */}
-  <Link
-    href="/projects"
-    className="
-      group relative inline-flex items-center gap-2
-      px-7 py-3 rounded-xl
-      bg-gradient-to-r from-neutral-900 to-neutral-700
-      text-white text-sm font-semibold
-      shadow-md
-      transition-all duration-300
-      hover:shadow-xl hover:scale-[1.04]
-      active:scale-[0.98]
-    "
-  >
-    View Projects
-    <span className="transition-transform group-hover:translate-x-1">
-      →
-    </span>
+              {/* PRIMARY */}
+              <Link
+                href="/projects"
+                className=" group relative inline-flex items-center gap-2 px-7 py-3 rounded-xl bg-gradient-to-r from-neutral-900 to-neutral-700  text-white text-sm font-semibold shadow-md transition-all duration-300 hover:shadow-xl hover:scale-[1.04] active:scale-[0.98]">
+                View Projects
+                <span className="transition-transform group-hover:translate-x-1">
+                  →
+                </span>
 
-    {/* Glow */}
-    <span className="absolute inset-0 rounded-xl bg-white/10 opacity-0 group-hover:opacity-100 transition" />
-  </Link>
+                {/* Glow */}
+                <span className="absolute inset-0 rounded-xl bg-white/10 opacity-0 group-hover:opacity-100 transition" />
+              </Link>
 
-  {/* SECONDARY */}
-  <Link
-    href="/contact"
-    className="
-      relative inline-flex items-center
-      px-6 py-3 rounded-xl
-      border border-neutral-300
-      text-sm font-medium
-      backdrop-blur-sm
-      transition-all duration-300
-      hover:bg-neutral-100 hover:scale-[1.02]
-      active:scale-[0.98]
-    "
-  >
-    Contact Me
-  </Link>
+              {/* SECONDARY */}
+              <Link href="/contact" className="relative inline-flex items-center px-6 py-3 rounded-xl border border-neutral-300 text-sm font-mediumbackdrop-blur-smtransition-all duration-300 hover:bg-neutral-100 hover:scale-[1.02] active:scale-[0.98">
+                Contact Me
+              </Link>
 
-</div>
+            </div>
 
           </div>
 
@@ -135,7 +114,7 @@ export default function Home() {
                   Currently
                 </p>
                 <p className="text-sm font-semibold mt-1">
-                  Software Developer  
+                  Software Developer
                   <br />
                   <span className="text-neutral-600">
                     Algofast India Pvt. Ltd.
@@ -170,116 +149,3 @@ export default function Home() {
   );
 }
 
-
-// "use client";
-
-// import { Container } from "@/components/Container";
-// import { homeText } from "@/constants/home-translation";
-// import { useLanguage } from "@/context/LanguageContext";
-// import Link from "next/link";
-
-// export default function Home() {
-//   const { language } = useLanguage();
-//   const t = homeText[language];
-
-//   return (
-//     <main className="min-h-screen bg-neutral-950 text-neutral-100 font-mono">
-//       <Container>
-//         <div className="py-24 max-w-3xl">
-
-//           {/* TERMINAL HEADER */}
-//           <div className="mb-10">
-//             <p className="text-neutral-500 text-sm">
-//               // portfolio.tsx
-//             </p>
-//             <p className="text-neutral-400 text-sm">
-//               // Built with Next.js · TypeScript · Clean Architecture
-//             </p>
-//           </div>
-
-//           {/* PROMPT */}
-//           <div className="space-y-6 text-sm leading-relaxed">
-
-//             <p>
-//               <span className="text-green-400">lakshay@portfolio</span>
-//               <span className="text-neutral-500">:</span>
-//               <span className="text-blue-400">~</span>
-//               <span className="text-neutral-500">$</span>{" "}
-//               whoami
-//             </p>
-
-//             <p className="pl-6 text-neutral-200">
-//               {t.hello}
-//             </p>
-
-//             <p className="pl-6 text-neutral-400">
-//               {t.p1}
-//             </p>
-
-//             <p className="pl-6 text-neutral-400">
-//               {t.p2}
-//             </p>
-
-//             <p className="pl-6 text-neutral-400">
-//               {t.p3}
-//             </p>
-
-//             {/* CURRENT ROLE */}
-//             <p>
-//               <span className="text-green-400">lakshay@portfolio</span>
-//               <span className="text-neutral-500">:</span>
-//               <span className="text-blue-400">~</span>
-//               <span className="text-neutral-500">$</span>{" "}
-//               cat current.txt
-//             </p>
-
-//             <div className="pl-6 space-y-1 text-neutral-300">
-//               <p>Software Developer</p>
-//               <p className="text-neutral-400">
-//                 Algofast India Pvt. Ltd.
-//               </p>
-//               <p className="text-neutral-500">
-//                 New Delhi, India
-//               </p>
-//             </div>
-
-//             {/* COMMANDS */}
-//             <p>
-//               <span className="text-green-400">lakshay@portfolio</span>
-//               <span className="text-neutral-500">:</span>
-//               <span className="text-blue-400">~</span>
-//               <span className="text-neutral-500">$</span>{" "}
-//               ls
-//             </p>
-
-//             <div className="pl-6 flex flex-col gap-2">
-//               <Link
-//                 href="/projects"
-//                 className="text-green-400 hover:underline"
-//               >
-//                 ./projects
-//               </Link>
-
-//               <Link
-//                 href="/contact"
-//                 className="text-blue-400 hover:underline"
-//               >
-//                 ./contact
-//               </Link>
-//             </div>
-
-//             {/* CURSOR */}
-//             <div className="flex items-center gap-2 pt-4">
-//               <span className="text-green-400">lakshay@portfolio</span>
-//               <span className="text-neutral-500">:</span>
-//               <span className="text-blue-400">~</span>
-//               <span className="text-neutral-500">$</span>
-//               <span className="w-2 h-4 bg-neutral-100 animate-pulse ml-1" />
-//             </div>
-
-//           </div>
-//         </div>
-//       </Container>
-//     </main>
-//   );
-// }

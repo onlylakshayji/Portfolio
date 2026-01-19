@@ -5,13 +5,16 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { IconMenu2, IconWorld } from "@tabler/icons-react";
+import {
+  IconMenu2,
+  IconWorld,
+  IconFileText,
+} from "@tabler/icons-react";
+
 import { useLanguage } from "@/context/LanguageContext";
 import { sidebarText, sidebarHeader } from "@/constants/navlinks-translation";
 import { socials } from "@/constants/socials";
 import { twMerge } from "tailwind-merge";
-import { IconFileText } from "@tabler/icons-react";
-
 
 export const Navbar = () => {
   const pathname = usePathname();
@@ -29,7 +32,7 @@ export const Navbar = () => {
       <header className="fixed top-0 inset-x-0 z-[200] bg-white/70 backdrop-blur-xl border-b border-neutral-200">
         <div className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
 
-          {/* LEFT: LOGO / NAME */}
+          {/* LEFT: LOGO */}
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="/images/ghost.jpg"
@@ -48,7 +51,7 @@ export const Navbar = () => {
             </div>
           </Link>
 
-          {/* CENTER: NAV LINKS (DESKTOP) */}
+          {/* CENTER: NAV LINKS */}
           <nav className="hidden md:flex items-center gap-6 text-sm">
             {t.navlinks.map((link) => (
               <Link
@@ -68,7 +71,25 @@ export const Navbar = () => {
           {/* RIGHT: ACTIONS */}
           <div className="flex items-center gap-3">
 
-            {/* RESUME */}
+            {/* DESKTOP SOCIALS */}
+            <div className="hidden md:flex items-center gap-3 mr-1">
+              {socials.map((s) => (
+                <Link
+                  key={s.href}
+                  href={s.href}
+                  target="_blank"
+                  className="h-9 w-9 rounded-lg border border-neutral-300
+                             flex items-center justify-center
+                             text-neutral-600
+                             hover:text-neutral-900 hover:bg-neutral-100 transition"
+                  aria-label={s.label}
+                >
+                  <s.icon className="h-4 w-4" />
+                </Link>
+              ))}
+            </div>
+
+            {/* RESUME (DESKTOP) */}
             <Link
               href="/docs/resume.pdf"
               className="hidden sm:inline-flex px-4 py-2 rounded-lg
@@ -78,7 +99,7 @@ export const Navbar = () => {
               Resume
             </Link>
 
-            {/* LANGUAGE */}
+            {/* LANGUAGE TOGGLE */}
             <button
               onClick={() => setLanguage(language === "en" ? "de" : "en")}
               className="h-9 w-9 rounded-lg border border-neutral-300
@@ -88,21 +109,19 @@ export const Navbar = () => {
               <IconWorld className="h-4 w-4" />
             </button>
 
-            <button>
-              <Link
-                href="/docs/resume.pdf"
-                onClick={() => setOpen(false)}
-                className="sm:hidden h-9 w-9 rounded-lg
-                          border border-neutral-300
-                          flex items-center justify-center
-                          hover:bg-neutral-100 transition"
-                aria-label="Download Resume"
-              >
-                 <IconFileText className="h-4 w-4" />
-              </Link>
-            </button>
+            {/* RESUME ICON (MOBILE) */}
+            <Link
+              href="/docs/resume.pdf"
+              className="sm:hidden h-9 w-9 rounded-lg
+                         border border-neutral-300
+                         flex items-center justify-center
+                         hover:bg-neutral-100 transition"
+              aria-label="Download Resume"
+            >
+              <IconFileText className="h-4 w-4" />
+            </Link>
 
-            {/* MOBILE MENU */}
+            {/* MOBILE MENU BUTTON */}
             <button
               onClick={() => setOpen(true)}
               className="md:hidden h-9 w-9 rounded-lg border border-neutral-300
@@ -146,6 +165,7 @@ export const Navbar = () => {
                 ))}
               </nav>
 
+              {/* MOBILE SOCIALS */}
               <div className="mt-6 pt-4 border-t border-neutral-200 flex flex-col gap-3">
                 {socials.map((s) => (
                   <Link
@@ -163,8 +183,9 @@ export const Navbar = () => {
         )}
       </AnimatePresence>
 
-      {/* OFFSET FOR FIXED NAV */}
+      {/* OFFSET */}
       <div className="h-14" />
     </>
   );
 };
+

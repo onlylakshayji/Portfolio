@@ -79,7 +79,7 @@ function rateLimit(ip: string) {
 const contactSchema = z.object({
   name: z.string().min(2),
   email: z.string().email(),
-  message: z.string().min(10),
+  message: z.string().min(3,"Message is too short"),
   company: z.string().optional(), // honeypot
 });
 
