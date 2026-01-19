@@ -18,7 +18,7 @@ export const socials = [
     icon: IconBrandX,
   },
   {
-    href: "https://www.linkedin.com/in/lakshay-bansal-2b5926250/",
+    href: "https://www.linkedin.com/in/lakshay-bansal-1252303a5/",
     label: "LinkedIn",
     icon: IconBrandTwitter,
   },
