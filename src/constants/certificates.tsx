@@ -2,14 +2,14 @@ export const certificates = {
   en: [
     {
       title: "Software Developer Internship at Algofast India Pvt. Ltd",
-      description: "From 15th January, 2025 to 15th May, 2025",
-      thumbnail: "/images/algofast-completion.png",
+      description: "From 15th January, 2024 to 15th May, 2025",
+      thumbnail: "/images/algofast.png",
     },
-    {
-      title: "Internship at BlendVidya Ed.tech Pvt. Ltd.",
-      description: "From 5th May, 2024 to 5th August, 2024",
-      thumbnail: "/images/intern.png",
-    },
+    // {
+    //   title: "Internship at BlendVidya Ed.tech Pvt. Ltd.",
+    //   description: "From 5th May, 2024 to 5th August, 2024",
+    //   thumbnail: "/images/intern.png",
+    // },
     {
       title: "Certificate from 100xdevs",
       description: "20th February, 2024 to 20th December, 2024",
@@ -39,14 +39,14 @@ export const certificates = {
   de: [
     {
       title: "Softwareentwickler-Praktikum bei Algofast India Pvt. Ltd",
-      description: "Vom 15. Januar 2025 bis 15. Mai 2025",
+      description: "Vom 15. Januar 2024 bis 15. Mai 2025",
       thumbnail: "/images/algofast-completion.png",
     },
-    {
-      title: "Praktikum bei BlendVidya Ed.tech Pvt. Ltd.",
-      description: "Vom 5. Mai 2024 bis 5. August 2024",
-      thumbnail: "/images/intern.png",
-    },
+    // {
+    //   title: "Praktikum bei BlendVidya Ed.tech Pvt. Ltd.",
+    //   description: "Vom 5. Mai 2024 bis 5. August 2024",
+    //   thumbnail: "/images/intern.png",
+    // },
     {
       title: "Zertifikat von 100xdevs",
       description: "Vom 20. Februar 2024 bis 20. Dezember 2024",
