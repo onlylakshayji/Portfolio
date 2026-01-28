@@ -2,7 +2,7 @@ import {
   IconBrandGithub,
   IconBrandInstagram,
   IconBrandLeetcode,
-  IconBrandTwitter,
+  IconBrandLinkedin,
   IconBrandX,
 } from "@tabler/icons-react";
 
@@ -20,7 +20,7 @@ export const socials = [
   {
     href: "https://www.linkedin.com/in/lakshay-bansal-1252303a5/",
     label: "LinkedIn",
-    icon: IconBrandTwitter,
+    icon: IconBrandLinkedin,
   },
   {
     href: "https://leetcode.com/u/LakshayBansalop/",

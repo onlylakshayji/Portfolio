@@ -40,7 +40,7 @@ export const certificates = {
     {
       title: "Softwareentwickler-Praktikum bei Algofast India Pvt. Ltd",
       description: "Vom 15. Januar 2024 bis 15. Mai 2025",
-      thumbnail: "/images/algofast-completion.png",
+      thumbnail: "/images/algofast.png",
     },
     // {
     //   title: "Praktikum bei BlendVidya Ed.tech Pvt. Ltd.",
